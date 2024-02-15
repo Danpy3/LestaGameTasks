@@ -24,7 +24,7 @@ class QueueList:
         return "Очередь пуста"
 
     def get_first(self):
-        return self.queue[0]
+        return self.queue[0] if self.queue else 'Очередь пуста'
 
 
 class QueueNode:
